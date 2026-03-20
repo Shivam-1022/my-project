@@ -20,12 +20,7 @@ pipeline {
             }
         }
 
-        stage('Manager Approval') {
-            steps {
-                input message: "Manager approve deployment?", ok: "Approve"
-                
-            }
-        }
+        
 
         stage('Deploy') {
             steps {
