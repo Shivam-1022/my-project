@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                cp index.html /var/www/html/
+                cp Jenkinsfile /var/www/html/
                 '''
             }
         }
